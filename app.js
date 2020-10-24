@@ -1,13 +1,13 @@
 const { Client } = require("whatsapp-web.js");
 const express = require("express");
-const socketIO = require("socket.io");
+// const socketIO = require("socket.io");
 const qrcode = require("qrcode");
 const http = require("http");
 const fs = require("fs");
 const fsx = require("fs-extra");
 const app = express();
 const server = http.createServer(app);
-const io = socketIO(server);
+const io = require("socket.io").listen(server);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
