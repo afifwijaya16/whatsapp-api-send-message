@@ -1,0 +1,11 @@
+
+POST http://localhost:8000/send-message
+Content-Type: application/json
+
+{
+    "number" : "6282372799157@c.us",
+    "message" : "tes lagi"
+}
+
+###
+GET http://localhost:8000/logsession
