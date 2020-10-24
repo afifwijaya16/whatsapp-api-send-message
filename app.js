@@ -102,6 +102,5 @@ app.get("/logsession", (req, res) => {
       console.error(err);
     });
 });
-server.listen(8000, function () {
-  console.log("App running on *: " + 8000);
-});
+
+server.listen(process.env.PORT || 3000);
