@@ -96,7 +96,7 @@ app.get("/logsession", (req, res) => {
     .remove("./whatsapp-session.json")
     .then(() => {
       console.log("success!");
-      res.redirect("http://localhost:8000/");
+      res.redirect("https://whatsapp-api-send-message.herokuapp.com/");
     })
     .catch((err) => {
       console.error(err);
